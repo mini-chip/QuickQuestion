@@ -7,7 +7,8 @@
 - 기획 기간 : 24.04.19 ~ 24.04.29
 - 개발 기간 : 24.04.30 ~ 24.06.07
 
-## 프로젝트 QQ
+## QQ(QuickQuestion) - 팀 프로젝트(Personal Fork)
+> 이 저장소는 팀 프로젝트의 개인 포크로, 포트폴리오/데모 목적입니다. 원본 저장소 및 크레딧은 Attribution & Credits에 확인부탁드립니다.
 
 ### 발단
 
@@ -30,54 +31,27 @@
 3. 질문자와 답변자 닉네임과 비밀번호 설정
 4. 기상청 api를 활용한 테마 자동 변동
 ```
+### 🧑‍💻 What I Built (개인 기여)
 
-# 👨‍👩‍👧‍👦 Team
+```Plain Text
+* 위치 기반 useGeolocation 훅 구현 및 날씨 테마 연동
+* 리스트 페이지네이션(onPageChange 콜백) + React Query 데이터 페칭 구조 설계
+* Modal UI & 폼 유효성 검사(React Hook Form)
+* 태그/상태 필터(미답변, 분야별)와 URL 쿼리 동기화
+* Card List API 연동 및 에러/로딩 상태 개선(스켈레톤)
+* 접근성/성능 개선(키보드 탐색, 이미지 최적화 등)
+```
+> 팀 협업 산출물 중 제가 담당/리드한 영역을 요약했습니다. 
 
-## 이서영 [🤎🦐🍣](https://github.com/00TaciTa00)
+🧑‍🤝‍🧑 Team
 
-- **Tags**, **Header**, **Alert Modal**, **PwPopup** 컴포넌트 구현
-- **Context**를 활용한 **Modal Provider**, **Modal Wrapper**, **useModal** 구현
-- **React Query**를 적용한 **AnswerContent** 구현
-- Tags, AnswerContent, PwPopup 및 일부 소규모 컴포넌트에 **React Hook Form** 적용
-- 담당 컴포넌트에 한하여 **StoryBook**을 활용한 컴포넌트 UI 테스트 진행
-- *람버트 등각 원추 투영법* 구현(```useLonLatToXY.ts```)
-- **Vercel**을 활용한 배포 진행
+* 이서영: Tags, Header, Alert Modal, PwPopup, Modal Provider/Wrapper, useModal, AnswerContent(RQ), RHF 일부 적용, 람버트 등각 원추 투영법(useLonLatToXY.ts), Vercel 배포
 
-## 김민희 [💛🍀🍀](https://github.com/mini-chip)
+* 김민희: useGeolocation 훅, Pagination(onPageChange), Modal UI/유효성검사, Tag 필터(미답변/분야별), CardList API 연동, RHF로 닉네임/비밀번호/답변 검증
 
-- **Geolocation** 메소드를 사용한 사용자 위치 **useHooks** 구현
-- **Pagination**을 onPageChange 콜백 기능 호출 해 구현
-- Modal UI, 유효성 검사 구현
-- **Tag 컴포넌트를 이용한 필터링 기능 구현 (미답변, 태그 별 필터링)**
-- API를 이용한 **Cardlist** 구현
-- react-hook-form을 이용한 validate 닉네임, 패스워드, 답변내용 구현
+* 김영은: 이모지 Reaction, Input UI, RHF 기반 Form Modal/버그 수정/서버 통신, Question Content(RQ) & Card 컴포넌트, 날짜/시간 훅(newDate.ts), Storybook UI 테스트
 
-## 김영은 [💙🍨🌊](https://github.com/00eun)
-
-- emoji를 활용한 **Reaction** 기능 구현
-- **Input** 컴포넌트 UI 및 기본 기능 구현
-- **React Hook Form**을 적용한 **From Modal** UI 및 버그 수정, 서버 통신
-- **React Query**를 적용한 **Question Content** UI 구현 및 API를 활용한 데이터 출력
-- **Card** 컴포넌트 UI 구현 및 API를 활용한 데이터 출력
-- 날짜, 시간 변환 hook(```newDate.ts```) 구현
-- **StoryBook**을 활용한 컴포넌트 UI 테스트
-
-## 유미정 [🧡🦔🎈](https://github.com/ymj0828)
-
-- **Button**, **Textarea**, **Footer**, **Answer Empty** 컴포넌트 UI 구현
-- 공통 **Layout** 설정
-- **StoryBook**에 컴포넌트의 UI 테스트
-- 닉네임 **중복 검사** 기능
-- react-hook-form을 사용해 질문 등록 **validation 설정** 및 **입력값 서버로 제출**
-- imgbb api를 이용하여 **이미지 호스팅**
-- **Carousel** 기능 작성
-- Next.js의 **next/font/local** 기능을 사용해 폰트 최적화
-- **Axios** api url 설정
-- Error Message, Placeholder **상수화**
-- **Local Storage** 데이터 호출하여 유저 확인 함수 구현
-- 해당 하는 **질문 찾기 모달** 구현
-- 답변 채택 기능
-- **날씨 api 데이터를 가져와서 알맞은 테마로 변경하기**
+* 유미정: Button/Textarea/Footer/AnswerEmpty UI, 공통 레이아웃, Storybook, 닉네임 중복 검사, RHF 질문 등록 검증/제출, imgbb 업로드, Carousel, next/font/local, Axios URL 설정, 메시지 상수화, 로컬 스토리지 유저 확인, 답변 채택, 날씨 API 테마 전환
 
 # 💻Features
 
@@ -221,3 +195,10 @@ quickquestion
 # 🎉 Special Thanks
 
 로고 디자인 : [🍇](https://x.com/Q_O819)
+
+# 📝 Attribution
+
+* Upstream: https://github.com/Important-is-Great-Youths/QuickQuestion
+
+* 본 개인 포크는 포트폴리오/데모 목적입니다.
+
