@@ -45,13 +45,10 @@
 
 🧑‍🤝‍🧑 Team
 
-* 이서영: Tags, Header, Alert Modal, PwPopup, Modal Provider/Wrapper, useModal, AnswerContent(RQ), RHF 일부 적용, 람버트 등각 원추 투영법(useLonLatToXY.ts), Vercel 배포
+## Team & Role
+- Team: 4 (FE 4)
+- My Role: Frontend — useGeolocation 훅 & 날씨 테마 연동, Pagination(onPageChange) + React Query 페칭/캐시, RHF 폼 검증 & 모달 UX, 태그/상태 필터 + URL 동기화, 카드 리스트 리팩토링(스켈레톤/에러)
 
-* 김민희: useGeolocation 훅, Pagination(onPageChange), Modal UI/유효성검사, Tag 필터(미답변/분야별), CardList API 연동, RHF로 닉네임/비밀번호/답변 검증
-
-* 김영은: 이모지 Reaction, Input UI, RHF 기반 Form Modal/버그 수정/서버 통신, Question Content(RQ) & Card 컴포넌트, 날짜/시간 훅(newDate.ts), Storybook UI 테스트
-
-* 유미정: Button/Textarea/Footer/AnswerEmpty UI, 공통 레이아웃, Storybook, 닉네임 중복 검사, RHF 질문 등록 검증/제출, imgbb 업로드, Carousel, next/font/local, Axios URL 설정, 메시지 상수화, 로컬 스토리지 유저 확인, 답변 채택, 날씨 API 테마 전환
 
 # 💻Features
 
@@ -201,4 +198,5 @@ quickquestion
 * Upstream: https://github.com/Important-is-Great-Youths/QuickQuestion
 
 * 본 개인 포크는 포트폴리오/데모 목적입니다.
+
 
