@@ -6,9 +6,9 @@
 - 날씨에 따라 다양한 테마를 가진 익명 문답 서비스
 - 기획 기간 : 24.04.19 ~ 24.04.29
 - 개발 기간 : 24.04.30 ~ 24.06.07
-
+- 배포 : [배포링크](https://quick-question-weather.vercel.app/)
 ## QQ(QuickQuestion) - 팀 프로젝트(Personal Fork)
-> 이 저장소는 팀 프로젝트의 개인 포크로, 포트폴리오/데모 목적입니다. 원본 저장소 및 크레딧은 Attribution & Credits에 확인부탁드립니다.
+> 이 저장소는 팀 프로젝트의 개인 포크로, 포트폴리오/데모 목적입니다. 
 
 ### 발단
 
@@ -198,5 +198,6 @@ quickquestion
 * Upstream: https://github.com/Important-is-Great-Youths/QuickQuestion
 
 * 본 개인 포크는 포트폴리오/데모 목적입니다.
+
 
 
