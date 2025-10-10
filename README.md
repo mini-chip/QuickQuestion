@@ -1,4 +1,3 @@
-
 [![로고](/public/assets/images/logo.png)](https://github.com/Important-is-Great-Youths/QuickQuestion)
 
 # 😺 프로젝트 소개
@@ -7,8 +6,10 @@
 - 기획 기간 : 24.04.19 ~ 24.04.29
 - 개발 기간 : 24.04.30 ~ 24.06.07
 - 배포 : [배포링크](https://quick-question-weather.vercel.app/)
+
 ## QQ(QuickQuestion) - 팀 프로젝트(Personal Fork)
-> 이 저장소는 팀 프로젝트의 개인 포크로, 포트폴리오/데모 목적입니다. 
+
+> 이 저장소는 팀 프로젝트의 개인 포크로, 포트폴리오/데모 목적입니다.
 
 ### 발단
 
@@ -31,24 +32,41 @@
 3. 질문자와 답변자 닉네임과 비밀번호 설정
 4. 기상청 api를 활용한 테마 자동 변동
 ```
-### 🧑‍💻 What I Built (개인 기여)
 
-```Plain Text
-* 위치 기반 useGeolocation 훅 구현 및 날씨 테마 연동
-* 리스트 페이지네이션(onPageChange 콜백) + React Query 데이터 페칭 구조 설계
-* Modal UI & 폼 유효성 검사(React Hook Form)
-* 태그/상태 필터(미답변, 분야별)와 URL 쿼리 동기화
-* Card List API 연동 및 에러/로딩 상태 개선(스켈레톤)
-* 접근성/성능 개선(키보드 탐색, 이미지 최적화 등)
-```
-> 팀 협업 산출물 중 제가 담당/리드한 영역을 요약했습니다. 
+### 🧑‍💻 개인 기여 (My Contributions)
 
-🧑‍🤝‍🧑 Team
+#### 1. 위치 기반 날씨 테마 시스템
 
-## Team & Role
-- Team: 4 (FE 4)
-- My Role: Frontend — useGeolocation 훅 & 날씨 테마 연동, Pagination(onPageChange) + React Query 페칭/캐시, RHF 폼 검증 & 모달 UX, 태그/상태 필터 + URL 동기화, 카드 리스트 리팩토링(스켈레톤/에러)
+- **useGeolocation 커스텀 훅 구현**: 사용자 위치 정보를 가져오는 재사용 가능한 훅 개발
+- **기상청 API 연동**: 실시간 날씨 데이터 fetching 및 에러 핸들링
+- **테마 자동 전환 로직**: 날씨 데이터에 따른 동적 UI 테마 변경 시스템 구축
 
+#### 2. 데이터 페칭 & 상태 관리
+
+- **React Query 아키텍처 설계**: 서버 상태 관리 및 캐싱 전략 수립
+- **페이지네이션 시스템**: `onPageChange` 콜백 기반 페이지네이션 컴포넌트 구현
+- **API 연동 최적화**: Card List 데이터 페칭 구조 설계 및 리팩토링
+
+#### 3. 폼 & 모달 UX/UI
+
+- **React Hook Form 통합**: 폼 유효성 검사 및 에러 핸들링 구현
+- **Modal 컴포넌트 개발**: 재사용 가능한 모달 UI 시스템 구축
+- **사용자 입력 검증**: 실시간 유효성 검사 및 피드백 제공
+
+#### 4. 필터링 & 검색 기능
+
+- **태그/상태 필터 시스템**: 미답변, 분야별 필터링 로직 구현
+- **URL 쿼리 동기화**: 필터 상태와 URL 파라미터 양방향 동기화
+- **검색 결과 최적화**: 필터링 조건에 따른 효율적인 데이터 표시
+
+#### 5. UX 개선 & 성능 최적화
+
+- **로딩 상태 관리**: Skeleton UI를 활용한 로딩 인디케이터 구현
+- **에러 핸들링**: 사용자 친화적인 에러 메시지 및 fallback UI
+- **접근성 개선**: 키보드 네비게이션 지원 및 시맨틱 마크업
+- **이미지 최적화**: Next.js Image 컴포넌트를 활용한 성능 향상
+
+> **📌 주요 기술 스택**: TypeScript, Next.js, React Query, React Hook Form, Geolocation API, 기상청 API
 
 # 💻Features
 
@@ -66,20 +84,9 @@
 
 ![image](https://github.com/Important-is-Great-Youths/QuickQuestion/assets/96277798/cdf15e03-6f20-480e-9cd1-2074b0fd0702)
 
-1. **미답변 필터링 기능** :  미답변 버튼을 체크하면 답변이 달리지 않은 질문들만 나오게 된다.
+1. **미답변 필터링 기능** : 미답변 버튼을 체크하면 답변이 달리지 않은 질문들만 나오게 된다.
 2. **분야 별로 필터링 기능** : 전체, 연예 등등 원하는 분야를 누르면 해당 분야의 질문만 나온다.
 3. **페이지네이션 기능** : 다음, 이전 버튼을 누르면 다음 페이지로 넘어가고 숫자를 클릭하면 해당 페이지의 질문들이 나온다.
-
-## Question Detail Page
-
-https://github.com/Important-is-Great-Youths/QuickQuestion/assets/79896328/70ad46f6-2bff-49f3-b5cd-06680c48bec2
-
-1. **이모지 리액션 기능** : 해당 질문에 대한 사람들의 느낌을 이모지의 형태로 알 수 있으며, 사용자 또한 이모지로 느낌을 남길 수 있다.
-2. **질문 상세 파악** : 해당 질문의 분야, 작성자, 작성일, 내용, 첨부 이미지(선택)을 볼 수 있다.
-3. **답변 파악** : 해당 질문에 몇 개의 답변이 등록되었는지, 그리고 등록된 답변의 답변자, 날짜, 답변자의 프로필 이미지, 그리고 답변 내용을 알 수 있다.
-4. **답변 등록** : 질문자가 아닌 사용자는 답변하기 버튼으로 본인의 답변을 등록할 수 있다.
-5. **답변 수정 및 삭제** : 답변자는 각 답변 별로 설정된 비밀번호(숫자 4자리)를 입력하여 해당 답변을 수정하거나 삭제할 수 있다. 단, 채택된 답변은 수정 및 삭제가 불가하다.
-6. **답변 채택** : 질문자는 본인이 원하는 답변을 채택할 수 있다.
 
 # 🛠️ Skill Stacks
 
@@ -107,97 +114,13 @@ https://github.com/Important-is-Great-Youths/QuickQuestion/assets/79896328/70ad4
 ![reacthookform](https://img.shields.io/badge/react_hook_form-EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white)
 ![NextThemes](https://img.shields.io/badge/next_themes-000.svg?&style=for-the-badge)
 
-# 📁 Package Structure
+---
 
-```plain
-quickquestion
-├─ public
-│  └─ assets
-│     ├─ fonts
-│     └─ images
-└─ src
-   ├─ apis
-   ├─ app
-   │  ├─ fonts
-   │  ├─ layout.tsx
-   │  ├─ providers.tsx
-   │  ├─ questiondetail
-   │  │  └─ [id]
-   │  └─ questionlist
-   ├─ components
-   │  ├─ common
-   │  │  ├─ AlertModal
-   │  │  ├─ Button
-   │  │  ├─ Card
-   │  │  ├─ FormModal
-   │  │  ├─ Head
-   │  │  ├─ Header
-   │  │  ├─ Input
-   │  │  ├─ ModalWrapper
-   │  │  ├─ NoAnswer
-   │  │  ├─ Pagination
-   │  │  ├─ PopUp
-   │  │  ├─ Reaction
-   │  │  ├─ Tags
-   │  │  └─ Textarea
-   │  ├─ home
-   │  │  ├─ CurationCardList
-   │  │  └─ QuestionForm
-   │  └─ questionDetail
-   │     ├─ AnswerEmpty
-   │     ├─ AnswerContent
-   │     ├─ ContentLayout
-   │     ├─ QuestionContent
-   │     └─ ReactionContent
-   ├─ constants
-   ├─ contexts
-   ├─ hooks
-   ├─ lib
-   ├─ stories
-   ├─ styles
-   │  ├─ base
-   │  ├─ main.scss
-   │  ├─ mixins
-   │  └─ variables
-   ├─ types
-   └─ utils
-```
+# 🔗 Links
 
-# 💾 Installation
+- **배포**: [https://quick-question-weather.vercel.app/](https://quick-question-weather.vercel.app/)
+- **팀 레포지토리**: [https://github.com/Important-is-Great-Youths/QuickQuestion](https://github.com/Important-is-Great-Youths/QuickQuestion)
 
-1. Clone the repository
+---
 
-  ```bash
-  git clone https://github.com/Important-is-Great-Youths/QuickQuestion.git
-  ```
-
-2. Install dependencies
-
-  ```bash
-  npm install
-  ```
-
-3. Start the development server
-
-  ```bash
-  npm run dev
-  ```
-
-4. Open the project in your browser
-
-  ```bash
-  http://localhost:3000
-  ```
-
-# 🎉 Special Thanks
-
-로고 디자인 : [🍇](https://x.com/Q_O819)
-
-# 📝 Attribution
-
-* Upstream: https://github.com/Important-is-Great-Youths/QuickQuestion
-
-* 본 개인 포크는 포트폴리오/데모 목적입니다.
-
-
-
+> **📝 Note**: 본 개인 포크는 포트폴리오/데모 목적입니다.
